@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "deep-forecast"
+version = "0.1.0"
+description = "Probabilistic multi-horizon demand forecasting with a Seq2Seq attention LSTM and quantile outputs (PyTorch)."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Akshay GC" }]
+keywords = ["forecasting", "time-series", "deep-learning", "pytorch", "quantile", "seq2seq", "attention"]
+
+dependencies = [
+    "numpy>=1.23",
+    "pandas>=1.5",
+    "torch>=2.0",
+]
+
+[project.optional-dependencies]
+serve = ["fastapi>=0.104", "uvicorn>=0.24", "pydantic>=2.0"]
+dev = ["pytest>=7.4", "ruff>=0.1"]
+
+[project.scripts]
+deepforecast = "deepforecast.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 100
+target-version = "py39"
