@@ -1,6 +1,8 @@
 # Deep Forecast
 
-[![CI](https://github.com/OWNER/deep-forecast/actions/workflows/ci.yml/badge.svg)](https://github.com/OWNER/deep-forecast/actions/workflows/ci.yml)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/akshay-birla-03/deep-forecast/blob/main/notebooks/Run_in_Colab.ipynb)
+
+[![CI](https://github.com/akshay-birla-03/deep-forecast/actions/workflows/ci.yml/badge.svg)](https://github.com/akshay-birla-03/deep-forecast/actions/workflows/ci.yml)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9%2B-blue.svg)](https://www.python.org/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.x-ee4c2c.svg)](https://pytorch.org/)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
